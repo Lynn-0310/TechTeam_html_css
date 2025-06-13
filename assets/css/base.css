@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primarry-key: #3b6834;
+  --title-fast: #1f1f1f;
+  --sync-fast: #8c8c8c;
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --Neutral-9: #434343;
+  --Neutral-7: #8c8c8c;
+  --Polar-Green-1: #f6ffed;
+}
+
+body {
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font_logo {
+  font-family: "Teko", sans-serif;
+  font-size: 45.818px;
+  line-height: 42px;
+}
+
+.font_menu_des {
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+}
+
+.font_title {
+  color: var(--primarry-key, #3b6834);
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px; /* 121.053% */
+}
+
+.font_note_copyright {
+  font-size: 12px;
+  line-height: 20px; /* 166.667% */
+}
+
+.font_number {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.font_detail {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+
+.font_clock_time {
+  color: var(--Main, #1e90ff);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+
+.font_detail_h1 {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px; /* 133.333% */
+}
+
+.font_title_find_team{
+  color: #000;
+font-size: 24px;
+font-weight: 500;
+line-height: 32px; 
+}
+
+
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 0px 16px;
+  }
+
+  .icon_logo_header,
+  .menu,
+  .action-login,
+  .btn_apply {
+    display: none;
+  }
+
+  .menu-header {
+    display: block;
+  }
+
+  .logo_name_header {
+    text-align: justify;
+    font-family: Teko;
+    font-size: 27px;
+    line-height: 27px; /* 100% */
+  }
+
+  .name_btn2 {
+    color: var(--primarry-key, #3b6834);
+  }
+
+  .btn_hire {
+    padding: 4px 13px;
+    gap: 8px;
+    flex-shrink: 0;
+    background: #fff;
+    border: 1px solid var(--primarry-key, #3b6834);
+  }
+
+  .header-fixed {
+    border-bottom: none;
+  }
+
+  .header-content {
+    padding: 8px 0px;
+  }
+
+  .header-fixed {
+    box-shadow: none;
+  }
+
+  /* -----find job ----- */
+
+  .row {
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .best-factory {
+    width: 100%;
+  }
+
+  .find-job {
+    margin-top: 80px;
+  }
+
+  .page.mobile,
+  .dots.mobile,
+  .page-size-selector {
+    display: none;
+  }
+  .page.none {
+    display: block;
+  }
+
+  .pagination-container {
+    justify-content: center;
+  }
+
+  /* -----detail job ----- */
+
+  .main-content-detail-job {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .content-left-detail-jb,
+  .content-right-detail-jb {
+    width: 100%;
+  }
+  .detail_job {
+    padding-top: 100px;
+  }
+
+  .detail_job .main-container {
+    padding: 0px;
+  }
+
+  /* -----find - team ----- */
+  .title-find-team-top{
+    display:none;
+  }
+
+  .top_main-find-team{
+    padding-top:70px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .icon_logo_header,
+  .menu,
+  .action-login {
+    display: none;
+  }
+
+  .img_logo_header {
+    height: 38px;
+  }
+
+  .menu-header {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-content {
+    padding: 8px 0px;
+  }
+
+  /* -----find job ----- */
+
+  .column {
+    width: 100%;
+  }
+
+  .blog-first, .gird_find_team_cl3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 cột bằng nhau */
+    gap: 20px; /* khoảng cách giữa các ô và các hàng */
+  }
+
+  /* -----detail job ----- */
+  .des-top {
+    font-size: 14px;
+  }
+
+  .title-bulding-right {
+    font-size: 16px;
+  }
+
+  .content-left-detail-jb {
+    width: 56%;
+  }
+
+  .content-right-detail-jb {
+    width: 42%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .icon_logo_header,
+  .menu {
+    display: none;
+  }
+
+  .img_logo_header {
+    height: 38px;
+  }
+
+  .menu-header {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* -----find job ----- */
+
+  .socials {
+    flex-wrap: nowrap;
+  }
+  .column {
+    width: 100%;
+  }
+
+  .blog-first,
+  .gird_find_team_cl3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 cột bằng nhau */
+    gap: 20px; /* khoảng cách giữa các ô và các hàng */
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* -----find job ----- */
+  .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .blog-first,
+  .gird_find_team_cl3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
+    gap: 20px; /* khoảng cách giữa các ô và các hàng */
+    width: 100%;
+  }
+}
