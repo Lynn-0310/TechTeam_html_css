@@ -448,6 +448,20 @@ a {
   .font_menu_des {
     font-size: 12px;
   }
+  .find-home-top {
+    text-align: center;
+  }
+
+  .font_des_between-blog {
+    font-size: 18px;
+  }
+  .font_build_home {
+    font-size: 30px;
+  }
+
+  .font_title-left_blog {
+    font-size: 20px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
