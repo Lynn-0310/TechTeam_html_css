@@ -85,14 +85,35 @@ a {
   line-height: 40px; /* 133.333% */
 }
 
-.font_title_find_team{
+.font_title_find_team {
   color: #000;
-font-size: 24px;
-font-weight: 500;
-line-height: 32px; 
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
+.font_title-left_blog {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
 
+.font_des_between-blog {
+  font-size: 20px;
+  line-height: 28px; /* 140% */
+}
+
+.font_bottom_blog {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-des-blog-acq {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px; /* 121.053% */
+}
 
 @media (max-width: 767px) {
   .main-container {
@@ -189,14 +210,104 @@ line-height: 32px;
   }
 
   /* -----find - team ----- */
-  .title-find-team-top{
-    display:none;
+  .title-find-team-top {
+    display: none;
   }
 
-  .top_main-find-team{
-    padding-top:70px;
+  .top_main-find-team {
+    padding-top: 70px;
   }
 
+  .img_top_jb {
+    overflow-x: auto; /*cho phép cuộn ngang khi ảnh tràn ra ngoài.*/
+    scroll-behavior: smooth; /*khi cuộn, chuyển động sẽ mượt (dùng cho nút điều hướng nếu có)*/
+    -webkit-overflow-scrolling: touch; /*tối ưu vuốt mượt cho thiết bị iOS.*/
+  }
+
+  .img_item_jb {
+    min-width: 80%;
+    flex-shrink: 0;
+  }
+
+  .detail_jb_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  /* -----blog ----- */
+  .breadcumb-blog {
+    display: none;
+  }
+
+  .content-top,
+  .content-between {
+    flex-direction: column;
+  }
+
+  .top-left,
+  .top-right,
+  .content-between-left,
+  .img-between-left {
+    width: 100%;
+  }
+
+  .content-top {
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .blog .main-content-blog .content-best-column .title-find-team-top {
+    display: block;
+    padding-right: 0;
+    width: fit-content; /*căn giữa cả khối*/
+    margin: 0 auto;
+  }
+
+  .blog .main-content-blog .content-best-column .title-find-team-top .blog-end,
+  .blog-acquire .content-bottom .title-find-team-top .blog-end {
+    display: none;
+  }
+
+  .content-blog-column3 {
+    flex-direction: column;
+  }
+
+  .img-top-right {
+    width: 133px;
+  }
+
+  /* -----blog acquỉe talent----- */
+
+  .content-blog-acq-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-acquire .content-bottom {
+    margin-top: 70px;
+  }
+
+  .blog-acquire .title-find-team-top {
+    display: block;
+  }
+
+  /* detail  blog acquire */
+  .detail-blog-top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .detail-blog-top-right,
+  .detail-blog-top-left {
+    width: 100%;
+  }
+
+  .content-blog-detail-acq-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-content-blog-acq {
+    margin-top: 70px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -230,7 +341,8 @@ line-height: 32px;
     width: 100%;
   }
 
-  .blog-first, .gird_find_team_cl3{
+  .blog-first,
+  .gird_find_team_cl3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 cột bằng nhau */
     gap: 20px; /* khoảng cách giữa các ô và các hàng */
@@ -251,6 +363,28 @@ line-height: 32px;
 
   .content-right-detail-jb {
     width: 42%;
+  }
+
+  /* -----blog ----- */
+  .top-left {
+    width: 43%;
+  }
+  .top-right {
+    width: 63%;
+  }
+
+  /* -----blog Acquire talent ----- */
+  .content-blog-acq-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* detail  blog acquire */
+  .content-blog-detail-acq-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-blog-top-right {
+    width: 65%;
   }
 }
 
@@ -288,8 +422,16 @@ line-height: 32px;
   .blog-first,
   .gird_find_team_cl3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 cột bằng nhau */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px; /* khoảng cách giữa các ô và các hàng */
+  }
+
+  /* -----blog ----- */
+  .top-left {
+    width: 55%;
+  }
+  .top-right {
+    width: 52%;
   }
 }
 
@@ -308,7 +450,7 @@ line-height: 32px;
   }
 
   .blog-first,
-  .gird_find_team_cl3{
+  .gird_find_team_cl3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 cột bằng nhau */
     gap: 20px; /* khoảng cách giữa các ô và các hàng */
