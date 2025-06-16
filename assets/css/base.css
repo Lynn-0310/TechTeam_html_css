@@ -35,6 +35,20 @@ a {
   text-decoration: none;
 }
 
+.font_choose_home {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+
+.font_home {
+  color: var(--Neutral-1, #fff);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px; /* 150% */
+}
+
 .font_logo {
   font-family: "Teko", sans-serif;
   font-size: 45.818px;
@@ -110,6 +124,13 @@ a {
 
 .font-des-blog-acq {
   color: var(--Neutral-11, #1f1f1f);
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px; /* 121.053% */
+}
+
+.font_build_home {
+  color: var(--Neutral-1, #fff);
   font-size: 38px;
   font-weight: 500;
   line-height: 46px; /* 121.053% */
@@ -308,6 +329,18 @@ a {
   .main-content-blog-acq {
     margin-top: 70px;
   }
+
+  .detail-blog-top-left {
+    display: none;
+  }
+
+  .detail-blog-top-left1 {
+    display: block;
+  }
+
+  .detail-blog-right-title-time {
+    gap: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -385,6 +418,29 @@ a {
 
   .detail-blog-top-right {
     width: 65%;
+  }
+  /* ------------------home -------------- */
+
+  body.home #header-placeholder {
+    display: none;
+  }
+
+  .nd {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+
+  .main-fixed .menu-logo {
+    display: block;
+    display: flex;
+  }
+
+  .img-companies{
+    width: 100%;
   }
 }
 
