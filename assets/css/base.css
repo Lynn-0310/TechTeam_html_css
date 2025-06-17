@@ -144,7 +144,7 @@ a {
   .icon_logo_header,
   .menu,
   .action-login,
-  .btn_apply {
+  .hero-content .btn_apply {
     display: none;
   }
 
@@ -159,16 +159,8 @@ a {
     line-height: 27px; /* 100% */
   }
 
-  .name_btn2 {
-    color: var(--primarry-key, #3b6834);
-  }
-
-  .btn_hire {
-    padding: 4px 13px;
-    gap: 8px;
-    flex-shrink: 0;
-    background: #fff;
-    border: 1px solid var(--primarry-key, #3b6834);
+  .header-fixed .header-content .header-right .btn_left .btn_apply {
+    display: none;
   }
 
   .header-fixed {
@@ -347,7 +339,7 @@ a {
     display: grid;
     padding: 0px 40px;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    gap: 24px;
     margin-top: 40px;
   }
 
@@ -370,6 +362,7 @@ a {
     display: block;
     display: flex;
     justify-content: space-between;
+    margin-top: -37px;
   }
 
   .img-companies {
@@ -420,6 +413,7 @@ a {
   .nd-team {
     flex-direction: column;
     gap: 20px;
+    padding: 0;
   }
   .des-team {
     width: 100%;
@@ -430,41 +424,51 @@ a {
 
   .hero-content {
     width: 100%;
+    padding-top: 30px;
   }
 
-  .btn_left {
+  .main-fixed .hero .hero-content .btn_left {
     flex-direction: column;
     gap: 20px;
   }
 
-  .content-how,
-  .choose-companies {
-    text-align: center;
+  .slg-item .choose-info .font_title {
+    font-size: 30px;
   }
 
-  .font_title {
-    font-size: 31px;
-  }
-  .font_menu_des {
-    font-size: 12px;
-  }
-  .find-home-top {
-    text-align: center;
-  }
-
-  .font_des_between-blog {
-    font-size: 18px;
-  }
   .font_build_home {
     font-size: 30px;
   }
 
-  .font_title-left_blog {
-    font-size: 20px;
+  .font_home {
+    font-size: 35px;
   }
 
-  .font_home {
-    font-size: 42px;
+  .main-fixed .hero .hero-content .btn_left .btn_apply {
+    gap: 8px;
+    flex-shrink: 0;
+    border: 1px solid var(--primarry-key, #3b6834);
+    display: block;
+  }
+
+  .main-fixed .menu-logo .btn_hire a {
+    color: fff;
+  }
+
+  .main-fixed .slg ul .slg-item {
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .title-companies, .font-right-candidate, .find-top-remote{
+    text-align: center;
+  }
+
+  .main-content-home{
+    gap:40px;
   }
 }
 
@@ -594,7 +598,7 @@ a {
     width: 100%;
   }
 
-  .btn_left {
+  .main-fixed .hero .hero-content .btn_left {
     flex-direction: column;
     gap: 20px;
   }

@@ -90,8 +90,8 @@
   background: var(--primarry-key, #3b6834);
 }
 
-.btn_apply:hover a {
-  color: #fff;
+.header-fixed .btn_apply:hover .name_btn1 {
+    color: #fff;
 }
 
 .name_btn1 {
